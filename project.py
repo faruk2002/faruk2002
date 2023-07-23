@@ -12,9 +12,9 @@ def check_password_complexity(password):
     has_special = any(not char.isalnum() for char in password)
 
     if length >= 8 and has_upper and has_lower and has_digit and has_special:
-        print("password safe")
+        print("password safe.")
     else:
-        print("password not safe")
+        print("password not safe.")
 
 def main():
     password = input("please enter your password: ")
